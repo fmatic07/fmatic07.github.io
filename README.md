@@ -1,4 +1,4 @@
-# fmatic07.github.io
+# franquematic.github.io
 
 Thanks for downloading this template!
 
