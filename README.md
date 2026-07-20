@@ -1,8 +1,20 @@
-# franquematic.github.io
+# Franque Matic — Portfolio
 
-Thanks for downloading this template!
+Personal portfolio site for Franque Matic, Lead Software Engineer.
 
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Live site: [fmatic07.github.io](https://fmatic07.github.io)
+
+## Local development
+
+```powershell
+cd fmatic07.github.io
+python -m http.server 8000
+```
+
+Open [http://localhost:8000](http://localhost:8000)
+
+## Stack
+
+- HTML, CSS, JavaScript
+- Bootstrap (UI framework)
+- jQuery plugins (AOS, Typed.js, Venobox, Owl Carousel)

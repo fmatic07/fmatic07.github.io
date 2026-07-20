@@ -1,8 +1,5 @@
 /**
-* Template Name: iPortfolio - v2.0.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Franque Matic Portfolio
 */
 !(function($) {
   "use strict";
@@ -146,7 +143,7 @@
       aos_init();
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
+    // Initiate venobox (lightbox)
     $(document).ready(function() {
       $('.venobox').venobox();
     });
