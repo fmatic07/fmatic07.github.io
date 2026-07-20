@@ -2,6 +2,9 @@
  * Design tokens — Franque Matic Portfolio
  */
 :root {
+  /* Layout */
+  --sidebar-width: 260px;
+
   /* Primary — Navy */
   --color-primary: #1E3A5F;
   --color-primary-hover: #294C79;
@@ -26,6 +29,31 @@
   --color-warning: #C58A2A;
   --color-error: #C94C4C;
 
+  /* Typography */
+  --font-body: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Raleway", var(--font-body);
+  --font-display: "Poppins", var(--font-body);
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.7;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
   /* Derived */
   --color-primary-soft: rgba(30, 58, 95, 0.08);
   --color-primary-muted: rgba(30, 58, 95, 0.12);
@@ -42,4 +70,23 @@
   --radius-sm: 6px;
   --radius-md: 8px;
   --transition-base: 0.3s ease;
+}
+
+/* Base typography */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--leading-tight);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  line-height: var(--leading-relaxed);
 }

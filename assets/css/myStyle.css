@@ -22,8 +22,8 @@
 
 @media (min-width: 1200px) {
   #hero .hero-container--lower-left {
-    left: calc(300px + 48px);
-    max-width: min(680px, calc(100% - 300px - 96px));
+    left: calc(var(--sidebar-width) + 48px);
+    max-width: min(720px, calc(100% - var(--sidebar-width) - 96px));
   }
 }
 
@@ -51,22 +51,22 @@
   }
 
   #hero .hero-container--lower-left h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: var(--text-3xl);
+    line-height: var(--leading-tight);
   }
 
   #hero .hero-container--lower-left p {
-    font-size: 18px;
+    font-size: var(--text-lg);
   }
 }
 
 .profile-photo-wrap {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 15px auto;
   border-radius: 50%;
-  border: 8px solid var(--color-border);
+  border: 6px solid var(--color-border);
   overflow: hidden;
   cursor: pointer;
   flex-shrink: 0;
@@ -85,8 +85,8 @@
 }
 
 #header .profile .profile-photo-wrap {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .profile-photo-wrap--about {
@@ -111,21 +111,23 @@
 }
 
 .portfolio-card h3 {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
   margin-bottom: 8px;
   color: var(--color-heading);
 }
 
 .portfolio-meta {
   color: var(--color-primary);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: 15px;
 }
 
 .portfolio-card p {
   color: var(--color-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
 }
 
 .portfolio-card ul {
@@ -161,6 +163,19 @@
 
 .about .content p.font-italic {
   color: var(--color-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+.about .content ul li {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-body);
+}
+
+.about .content ul li strong {
+  color: var(--color-heading);
+  font-weight: var(--font-weight-semibold);
 }
 
 .services .description {
@@ -170,6 +185,8 @@
 .resume .resume-item p,
 .resume .resume-item ul li {
   color: var(--color-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
 }
 
 .nav-menu .active > a {
