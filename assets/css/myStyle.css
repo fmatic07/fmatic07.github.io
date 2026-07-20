@@ -13,11 +13,11 @@
   z-index: 2;
   max-width: min(680px, calc(100% - 96px));
   padding: 28px 32px;
-  background: rgba(5, 13, 24, 0.6);
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  backdrop-filter: blur(8px);
 }
 
 @media (min-width: 1200px) {
@@ -27,19 +27,18 @@
   }
 }
 
-#hero .hero-container--lower-left h1,
-#hero .hero-container--lower-left p,
-#hero .hero-container--lower-left p span {
-  text-shadow:
-    -1px -1px 0 rgba(5, 13, 24, 0.85),
-    1px -1px 0 rgba(5, 13, 24, 0.85),
-    -1px 1px 0 rgba(5, 13, 24, 0.85),
-    1px 1px 0 rgba(5, 13, 24, 0.85),
-    0 2px 8px rgba(0, 0, 0, 0.45);
+#hero .hero-container--lower-left h1 {
+  color: var(--color-heading);
 }
 
 #hero .hero-container--lower-left p {
+  color: var(--color-body);
   margin-bottom: 0;
+}
+
+#hero .hero-container--lower-left p span {
+  color: var(--color-heading);
+  border-bottom-color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
@@ -67,10 +66,11 @@
   height: 120px;
   margin: 15px auto;
   border-radius: 50%;
-  border: 8px solid #2c2f3f;
+  border: 8px solid var(--color-border);
   overflow: hidden;
   cursor: pointer;
   flex-shrink: 0;
+  transition: border-color var(--transition-base);
 }
 
 .profile-photo-wrap img {
@@ -97,35 +97,42 @@
 }
 
 .profile-photo-wrap:hover {
-  border-color: #149ddd;
+  border-color: var(--color-accent);
 }
 
 .portfolio-card {
-  background: #fff;
+  background: var(--color-surface);
   padding: 30px;
   height: 100%;
-  border-left: 3px solid #149ddd;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
 }
 
 .portfolio-card h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #050d18;
+  color: var(--color-heading);
 }
 
 .portfolio-meta {
-  color: #149ddd;
+  color: var(--color-primary);
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.portfolio-card p {
+  color: var(--color-body);
 }
 
 .portfolio-card ul {
   list-style: none;
   padding: 0;
   margin: 15px 0 0;
+  color: var(--color-muted);
 }
 
 .portfolio-card ul li {
@@ -135,14 +142,77 @@
 .portfolio-card-link {
   display: inline-block;
   margin-top: 15px;
-  color: #149ddd;
+  color: var(--color-primary);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .portfolio-card-link:hover {
-  color: #0d6ea8;
+  color: var(--color-primary-hover);
 }
 
 #footer .copyright {
   text-align: center;
+}
+
+.section-title p {
+  color: var(--color-body);
+}
+
+.about .content p.font-italic {
+  color: var(--color-body);
+}
+
+.services .description {
+  color: var(--color-body);
+}
+
+.resume .resume-item p,
+.resume .resume-item ul li {
+  color: var(--color-body);
+}
+
+.nav-menu .active > a {
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: var(--radius-sm);
+}
+
+.nav-menu .active > a i {
+  color: var(--color-primary);
+}
+
+.breadcrumbs {
+  background: var(--color-divider);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumbs h2 {
+  color: var(--color-heading);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary-hover);
+}
+
+.portfolio-details .portfolio-description p,
+.portfolio-details .portfolio-description li {
+  color: var(--color-body);
+}
+
+.testimonials .testimonial-item h3 {
+  color: var(--color-heading);
+}
+
+.testimonials .testimonial-item h4 {
+  color: var(--color-muted);
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: var(--color-accent);
 }

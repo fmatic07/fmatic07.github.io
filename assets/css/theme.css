@@ -1,0 +1,45 @@
+/**
+ * Design tokens — Franque Matic Portfolio
+ */
+:root {
+  /* Primary — Navy */
+  --color-primary: #1E3A5F;
+  --color-primary-hover: #294C79;
+  --color-primary-dark: #14263F;
+
+  /* Accent — Olive */
+  --color-accent: #556B2F;
+  --color-accent-hover: #687E3A;
+
+  /* Neutrals */
+  --color-bg: #F7F9FB;
+  --color-surface: #FFFFFF;
+  --color-sidebar-bg: #E0E5EB;
+  --color-heading: #18212F;
+  --color-body: #4B5563;
+  --color-muted: #6B7280;
+  --color-border: #E5E9EF;
+  --color-divider: #EEF2F5;
+
+  /* Semantic */
+  --color-success: #3F6F4A;
+  --color-warning: #C58A2A;
+  --color-error: #C94C4C;
+
+  /* Derived */
+  --color-primary-soft: rgba(30, 58, 95, 0.08);
+  --color-primary-muted: rgba(30, 58, 95, 0.12);
+  --color-accent-soft: rgba(85, 107, 47, 0.1);
+  --color-hero-gradient: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(247, 249, 251, 0.28) 45%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  --shadow-soft: 0 2px 12px rgba(24, 33, 47, 0.06);
+  --shadow-card: 0 1px 3px rgba(24, 33, 47, 0.08);
+  --shadow-subtle: 0 4px 16px rgba(24, 33, 47, 0.07);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --transition-base: 0.3s ease;
+}
